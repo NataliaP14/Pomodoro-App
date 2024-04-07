@@ -8,8 +8,6 @@ let remainingSeconds;
 
 
 const appTimer = () => {
-   
-
     if (state) {
         state = false;
         clearInterval(interval);
@@ -42,9 +40,6 @@ const updateSeconds = () => {
     } 
 }
         
-      
-
-
 const stopTimer = () => {
     
     clearInterval(interval);
