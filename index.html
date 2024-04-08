@@ -9,9 +9,21 @@
     </head>
    
     <body>
-       <button class = "button-settings">Settings</button>
+        <div>
+            <button data-setting-target = "#settings" class = "button-settings">Settings</button>
+            <div class = "settings" id = "settings">
+                <div class ="settings-header">Settings
+                <button data-close-button class = "close-button">&times;</button>
+                </div>
+                <div class ="settings-body">
+                <input type = "number" id = "customMin" min = "0" max = "1000"/>
+                <input type = "number" id = "customSec" min = "0" max = "59"/>
+                <button class = "custom-button" id = "customButton">Set Time</button>
+                </div>
+            </div>
+        </div>
+        <div id = "overlay"></div>
         <div class ="app-container">
-           
             <h1>Pomodoro</h1>
             <div class="app-message">Press Start To Begin!</div>
             <div class="app-circle">
