@@ -1,18 +1,26 @@
 html {
     font-family: 'Fira Sans', san-serif;
     letter-spacing: 0.8px;
-    min-height: 100vh;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+#photo {
+    position: fixed;
     
-    background-image: linear-gradient(-20deg, #025159 0%, #733b36 100%);
-    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 h1 {
     font-size: 75px;
-    color: #d8e9ef;
+    color: #1c1d1d; 
     }
 p {
     margin: 0;
-    color: #d8e9ef;
+    color: #1c1d1d; 
 }
 .settings {
     position: fixed;
@@ -26,7 +34,7 @@ p {
     width: 15%;
     height: 10%;
     z-index: 10;
-    background-image: linear-gradient(-20deg, #025159 0%, #733b36 100%);
+    background-image: linear-gradient(-20deg, hsl(0, 0%, 100%) 0%, #3d98c2 100%);
 }
 .settings.active {
     transform: translate(-50%, -50%) scale(1);
@@ -36,8 +44,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
-    color: white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
 }
 .settings-header, .title {
     font-size: 1.25rem;
@@ -54,7 +62,7 @@ p {
 }
 .settings-body {
     padding: 10px 15px;
-    color: white;
+    color: #1c1d1d; 
 }
 #customMin, #customSec {
     width: 25%;
@@ -72,7 +80,7 @@ p {
 .body-text {
     padding: 5px;
     text-align: center;
-    color: white;
+    color: #1c1d1d; 
 }
 #overlay {
     position: fixed;
@@ -92,7 +100,7 @@ p {
 .app-message {
     height: 20px;
     margin: 10px auto 20px auto;
-    color: #d8e9ef;
+    color: #1c1d1d; 
 }
 .app-container {
     width: 350px;
@@ -141,17 +149,17 @@ p {
   border-left: none;
 }
 .circle {
-    border-color: #bf5239;
+    border-color: #36a3c4;
 }
 .circle-mask {
-    border-color: #e85a71; 
+    border-color: #45a5c2; 
 }
 .app-counter-box {
     font-family: 'Droid Sans Mono', monospace;
     font-size: 100px;
     position: relative;
     bottom: 280px;
-    color: #d8e9ef;
+    color: #1c1d1d; 
 }
 .button-start, .button-stop, .button-reset {
     position: relative;
@@ -162,7 +170,7 @@ p {
     border: none;
     background: none;
     outline: none;
-    color: #d8e9ef;
+    color: #1c1d1d; 
     margin-top: 8px;
 }
 .button-settings {
@@ -173,7 +181,7 @@ p {
     padding: 10px 20px; 
     border: none;
     background: none;
-    color: #d8e9ef; 
+    color: #1c1d1d; 
 }
 
 button:hover {
